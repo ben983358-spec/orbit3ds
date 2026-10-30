@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "status": "integration-contract-only-no-core-included",
+  "globalName": "ThreeDSEmulatorCore",
+  "requiredMethods": [
+    "loadCartridge(blob)",
+    "start()",
+    "pressButton(buttonName, pressed)",
+    "touch(x, y, pressed)",
+    "getSaveData()"
+  ],
+  "optionalMethods": [
+    "stop()",
+    "loadSaveData(blob)",
+    "serializeState()",
+    "restoreState(blob)",
+    "setCirclePad(x, y)"
+  ],
+  "display": {
+    "topCanvasId": "topScreen",
+    "bottomCanvasId": "bottomScreen",
+    "topResolution": [400, 240],
+    "bottomResolution": [320, 240]
+  },
+  "fileFormatsAcceptedByShell": [".3ds", ".cci", ".cxi", ".cia", ".3dsx", ".app"]
+}
